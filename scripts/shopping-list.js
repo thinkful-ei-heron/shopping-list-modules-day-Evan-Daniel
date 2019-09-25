@@ -142,6 +142,3 @@ export default {
 
 import store from './store.js';
 import item from './item.js';
-
-console.log(store);
-console.log(foo);

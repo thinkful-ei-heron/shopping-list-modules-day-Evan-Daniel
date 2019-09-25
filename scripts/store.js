@@ -1,5 +1,3 @@
-const foo = 'bar';
-
 const items = []
 const hideCheckedItems = false
 

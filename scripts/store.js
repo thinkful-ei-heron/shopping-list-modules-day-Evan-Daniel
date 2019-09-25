@@ -38,8 +38,9 @@ function findAndDelete (id) {
   items.push(...newItems);
 }
 
-
-
+const toggleCheckedFilter = function () {
+  this.hideCheckedItems = !this.hideCheckedItems;
+};
 
 import item from './item.js';
 export default {
@@ -49,6 +50,7 @@ export default {
   findAndUpdateName,
   findAndDelete,
   items,
-  hideCheckedItems
+  hideCheckedItems,
+  toggleCheckedFilter,
 };
 

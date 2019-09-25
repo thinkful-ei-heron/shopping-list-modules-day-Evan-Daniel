@@ -32,12 +32,21 @@ function findAndUpdateName (id, newName) {
 
 function findAndDelete (id) {
   //const foundItem = this.findById(id);
-  items = items.filter (element => element.id !== id);
+  const newItems = items.filter (element => element.id !== id);
+  items.length = 0;
+  items.push(...newItems);
 }
+
+
 
 
 import item from './item.js';
 export default {
+  findById,
+  addItem,
+  findAndToggleChecked,
+  findAndUpdateName,
+  findAndDelete,
   items,
   hideCheckedItems
 };

@@ -1,16 +1,17 @@
-const items = []
+const items = [1,2,3]
 const hideCheckedItems = false
 
 //returns the object
 function findById (id) {
-  id.find (element => element.id === id);
+ return items.find(element => element.id === id);
 }
 
 function addItem (name) {
   try {
     item.validateName(name);
-    store.items.push(this.items.create(name));
-  } catch(error) {
+    items.push(item.create(name));
+  }
+  catch(error) {
     console.log(`Cannot add item: ${error.message}`);
   }
 }
